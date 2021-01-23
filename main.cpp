@@ -1,8 +1,11 @@
-#include <iostream>
+#include "mainwindow.h"
 
-int main()
+#include <QApplication>
+
+int main(int argc, char *argv[])
 {
-    //this is a test program
-    cout << "hi";
-    cout << "Hello world";
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }

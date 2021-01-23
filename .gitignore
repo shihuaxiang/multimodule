@@ -1,0 +1,7 @@
+*.pro.user
+.qmake.stash
+.vs/
+debug/
+release/
+*.vcxproj*
+ui_*.h
