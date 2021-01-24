@@ -5,3 +5,4 @@ debug/
 release/
 *.vcxproj*
 ui_*.h
+*.sln

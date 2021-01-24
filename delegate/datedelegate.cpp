@@ -33,7 +33,6 @@ void DateDelegate::setEditorData(QWidget *editor, const QModelIndex &index) cons
 }
 
 // 将代理控件里面的数据更新到视图控件中
-// void setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const;
 void DateDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const
 {
   QDateTimeEdit *pEditor = NULL;
@@ -46,7 +45,6 @@ void DateDelegate::setModelData(QWidget *editor, QAbstractItemModel *model, cons
 }
 
 // 代理中数据的改变放到model中
-// void updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const;
 void DateDelegate::updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     Q_UNUSED(index);

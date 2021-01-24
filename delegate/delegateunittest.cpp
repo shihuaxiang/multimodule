@@ -67,12 +67,12 @@ int DelegateUnitTest::initTableView(QTableView* tableView)
     tableView->setModel(model);
     tableView->setWindowTitle(QLatin1String("Delegate"));
 
-//    DateDelegate dateDelegate;
-//    tableView->setItemDelegateForColumn(1, &dateDelegate);
-//    ComboDelegate comboDelegate;
-//    tableView->setItemDelegateForColumn(2, &comboDelegate);
-    //SpinDelegate spinDelegate;
-    //tableView->setItemDelegateForColumn(3, &spinDelegate);
+    DateDelegate * dateDelegate = new DateDelegate;
+    tableView->setItemDelegateForColumn(1, dateDelegate);
+    ComboDelegate * comboDelegate = new ComboDelegate;
+    tableView->setItemDelegateForColumn(2, comboDelegate);
+    SpinDelegate * spinDelegate = new SpinDelegate;
+    tableView->setItemDelegateForColumn(3, spinDelegate);
 
     return 0;
 }

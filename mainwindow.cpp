@@ -15,19 +15,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-#include <QStandardItemModel>
-
 void MainWindow::on_pushButton_clicked()
 {
     QTableView * tableView = new QTableView();
     DelegateUnitTest::initTableView(tableView);
-
-//    QStandardItemModel* model = new QStandardItemModel(tableView);
-//    model->setItem(0, 0, new QStandardItem("zhang"));
-//    model->setItem(0, 1, new QStandardItem("3"));
-//    model->setItem(0, 2, new QStandardItem("boy"));
-//    tableView->setModel(model);
-
-    tableView->resize(500, 300);
+    tableView->resize(600, 300);
     tableView->show();
 }
