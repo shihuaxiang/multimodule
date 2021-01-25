@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QTableView>
 #include <delegate/delegateunittest.h>
+#include "compressform.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,4 +22,10 @@ void MainWindow::on_pushButton_clicked()
     DelegateUnitTest::initTableView(tableView);
     tableView->resize(600, 300);
     tableView->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    CompressForm * form = new CompressForm();
+    form->show();
 }

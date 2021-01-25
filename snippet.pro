@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    compressform.cpp \
     delegate/combodelegate.cpp \
     delegate/datedelegate.cpp \
     delegate/delegateunittest.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    compressform.h \
     delegate/combodelegate.h \
     delegate/datedelegate.h \
     delegate/delegateunittest.h \
@@ -24,6 +26,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    compressform.ui \
     mainwindow.ui
 
 # Default rules for deployment.

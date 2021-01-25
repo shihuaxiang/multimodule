@@ -18,13 +18,26 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>30</y>
+      <y>20</y>
       <width>151</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
      <string>TableEditor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ImageCompress</string>
     </property>
    </widget>
   </widget>
@@ -34,7 +47,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
