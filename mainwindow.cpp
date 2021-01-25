@@ -3,6 +3,7 @@
 #include <QTableView>
 #include <delegate/delegateunittest.h>
 #include "compressform.h"
+#include "winapitestform.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,5 +28,11 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
     CompressForm * form = new CompressForm();
+    form->show();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    WinapiTestForm * form = new WinapiTestForm();
     form->show();
 }

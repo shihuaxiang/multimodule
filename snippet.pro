@@ -15,7 +15,8 @@ SOURCES += \
     delegate/delegateunittest.cpp \
     delegate/spindelegate.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    winapitestform.cpp
 
 HEADERS += \
     compressform.h \
@@ -23,11 +24,15 @@ HEADERS += \
     delegate/datedelegate.h \
     delegate/delegateunittest.h \
     delegate/spindelegate.h \
-    mainwindow.h
+    mainwindow.h \
+    winapitestform.h
 
 FORMS += \
     compressform.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    winapitestform.ui
+
+LIBS += -luser32
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
